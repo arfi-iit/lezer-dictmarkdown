@@ -9,7 +9,8 @@
     "require": "./dist/index.cjs"
   },
   "scripts": {
-    "build": "lezer-generator src/dictmarkdown.grammar -o src/parser && rollup -c"
+    "build": "lezer-generator src/dictmarkdown.grammar -o src/parser && rollup -c",
+    "test": "npm run build && mocha test/test-dictmarkdown.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,8 @@
   "dependencies": {
     "@lezer/common": "^1.2.3",
     "@lezer/highlight": "^1.2.1",
-    "@lezer/lr": "^1.4.2"
+    "@lezer/lr": "^1.4.2",
+    "mocha": "^11.1.0"
   },
   "devDependencies": {
     "@lezer/generator": "^1.7.2",

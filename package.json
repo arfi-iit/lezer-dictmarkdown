@@ -1,0 +1,37 @@
+{
+  "name": "@arfi-iit/lezer-dictmarkdown",
+  "version": "1.0.0",
+  "description": "A lezer grammar for annotating dictionary entries using Markdown-style annotations.",
+  "main": "dist/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arfi-iit/lezer-dictmarkdown.git"
+  },
+  "keywords": [
+    "lezer",
+    "dictmarkdown"
+  ],
+  "author": "Petru Rebeja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arfi-iit/lezer-dictmarkdown/issues"
+  },
+  "homepage": "https://github.com/arfi-iit/lezer-dictmarkdown#readme",
+  "dependencies": {
+    "@lezer/common": "^1.2.3",
+    "@lezer/highlight": "^1.2.1",
+    "@lezer/lr": "^1.4.2"
+  },
+  "devDependencies": {
+    "@lezer/generator": "^1.7.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rollup": "^4.34.0"
+  }
+}

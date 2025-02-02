@@ -9,6 +9,7 @@
     "require": "./dist/index.cjs"
   },
   "scripts": {
+    "build": "lezer-generator src/dictmarkdown.grammar -o src/parser && rollup -c"
   },
   "repository": {
     "type": "git",

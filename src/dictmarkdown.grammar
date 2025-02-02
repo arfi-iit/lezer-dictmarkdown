@@ -1,0 +1,15 @@
+@top DictMarkdown{ Bold (Superscript | Subscript | Bold | Italic | Ref | Spaced | text)+ }
+
+content{ text | Subscript | Superscript }
+Bold { "**" content+ "**" }
+Italic { "*" content+ "*" }
+Ref { "@" content+ "@" }
+Spaced { "$" content+ "$"  }
+
+@tokens {
+  text {  ![*^_@$]+ }
+  Superscript { "^" (@asciiLetter | @digit) "^" }
+  Subscript { "_" (@asciiLetter | @digit) "_"}
+}
+
+@external propSource dictMarkdownHighlighting from "./highlight"

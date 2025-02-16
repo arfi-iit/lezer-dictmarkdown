@@ -1,6 +1,6 @@
 {
   "name": "@arfi-iit/lezer-dictmarkdown",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A lezer grammar for annotating dictionary entries using Markdown-style annotations.",
   "main": "dist/index.js",
   "type": "module",
